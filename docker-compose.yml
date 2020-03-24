@@ -10,7 +10,7 @@ services:
       - '3000:3000'
     volumes:
       - ./client/:/usr/src/app
-    command: [sh, -c, "cd nuxt/ && npm run dev"]
+    # command: [sh, -c, "cd nuxt/ && npm run dev"]
 
   api:
     container_name: api
@@ -20,5 +20,5 @@ services:
       - '8000:8000'
     volumes:
       - ./api:/code
-    command: python manage.py runserver 0.0.0.0:8000
+    # command: python manage.py runserver 0.0.0.0:8000
 
