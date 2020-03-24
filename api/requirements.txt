@@ -1,0 +1,5 @@
+django
+djangorestframework
+django-filter
+scikit-learn
+django-cors-headers
